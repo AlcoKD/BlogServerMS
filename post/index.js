@@ -16,7 +16,7 @@ app.get('/posts', (req,res) => {
 });
 
 //http post request
-app.post('/posts',  async (req, res) => {
+app.post('/posts/create',  async (req, res) => {
     const id = randomBytes(4).toString('hex');//4 bvtes of random data in hexadecimal
     const {title} = req.body;
 
