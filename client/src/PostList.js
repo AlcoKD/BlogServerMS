@@ -7,7 +7,7 @@ const PostList = () => {
     const [posts, setPosts] = useState({}); //states
     //function to fetch some datas
     const fetchPosts = async () => {
-        const res = await axios.get('http://localhost:4002/posts');
+        const res = await axios.get('http://posts.com/posts');
         setPosts(res.data);
     }
     //call the datas from fetch with useEffect
